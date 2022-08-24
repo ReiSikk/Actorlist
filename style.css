@@ -34,6 +34,12 @@ button {
   border: 2.5px solid white;
   background-color: #040404;
 }
+button:hover {
+  transform: scale(1.04);
+  transition: ease-in-out 0.15s;
+}
+/* //////////////////// */
+
 h1 {
   width: 100%;
   text-align: center;
@@ -46,4 +52,33 @@ header {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+/* Drop Down styling ///////////////// */
+.dropDown {
+  width: 100%;
+  background-color: #485461;
+  height: fit-content;
+  display: block;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  text-align: center;
+}
+.dropDown h3 {
+  color: white;
+}
+.hidden {
+  display: none;
+}
+
+/* ///////////////////////////////////// */
+@media only screen and (max-width: 999px) {
+  .actorGrid main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .actorGrid main {
+    grid-template-columns: 1fr;
+  }
 }
