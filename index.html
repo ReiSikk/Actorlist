@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="style.css" />
     <title>Actorslist</title>
   </head>
-  <body>
+  <body class="actorGrid">
     <header>
       <h1>Actorslist</h1>
     </header>
-    <main>
-      <template id="actorTemplate">
-        <article id="actorList">
-          <div id="actorDiv">
-            <h2 class="actorName">Actor Name</h2>
-            <button id="moreInfo">See more</button>
-          </div>
-        </article>
-      </template>
-    </main>
+    <div class="wrapper">
+      <main>
+        <template id="actorTemplate">
+          <article id="actorList">
+            <div id="actorDiv">
+              <h2 class="actorName">Actor Name</h2>
+              <button id="moreInfo">See movies</button>
+            </div>
+          </article>
+        </template>
+      </main>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
