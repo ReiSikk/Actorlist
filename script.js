@@ -33,12 +33,15 @@ function showActors(fullname) {
 }
 
 ////////////Drop down function////////
-
-function revealInfo() {
+document.querySelector("body").addEventListener("click", (event) => {
+  if (event.target.matches(".moreInfo")) {
+    event.target.closest(".dropDown", revealInfo());
+    console.log("clicked");
+  }
+});
+function revealInfo(data) {
   const drop = document.querySelector(".dropDown");
-  /*  document.querySelector(".dropDown").classList.remove("hidden");
-  console.log("revealInfo");
-  dropdown.classList.toggle("hidden"); */
+
   if (drop.style.display === "none") {
     drop.style.display = "block";
   } else {
